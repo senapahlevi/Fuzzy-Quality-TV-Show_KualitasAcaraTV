@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".activityhasil">
+
+
+    <TextView
+        android:id="@+id/txtbudaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai Budaya(Persen)"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="31dp" />
+    <EditText
+        android:id="@+id/boxbudaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginLeft="60dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/txthiburan"
+        android:layout_width="92dp"
+        android:layout_height="18dp"
+        android:text="Nilai Hiburan: "
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="192dp" />
+    <EditText
+        android:id="@+id/boxhiburan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginLeft="60dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <TextView
+        android:id="@+id/txtedukatif"
+        android:layout_width="92dp"
+        android:layout_height="18dp"
+        android:text="Nilai edukatif: "
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <EditText
+        android:id="@+id/boxedukatif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:text="Hasil Output"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="290dp"
+        android:layout_height="408dp"
+        android:layout_below="@id/btnoutput"
+        android:fitsSystemWindows="false"
+        android:windowSoftInputMode="adjustResize"
+        android:layout_marginLeft="50dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="282dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fuz"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:text="Perhitungan Fuzzy"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/bts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budaya Tidak sesuai"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.102"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.542" />
+
+
+            <TextView
+                android:id="@+id/hbutses"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="Butses "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.661"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.542" />
+
+            <TextView
+                android:id="@+id/bs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budaya sesuai"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="416dp" />
+
+            <TextView
+                android:id="@+id/hbuses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="buses"
+                tools:layout_editor_absoluteX="207dp"
+                tools:layout_editor_absoluteY="416dp" />
+
+            <TextView
+                android:id="@+id/bss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budaya sangat sesuai"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="449dp" />
+
+            <TextView
+                android:id="@+id/hbss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="busses"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/ere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edukatif Sedikit:"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eduren"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/emen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edukatif Sedang:"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/heme"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="edumen"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/eti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edukatif Tinggi: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/heti"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:text="etin"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiburan Tidak sehat: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hhts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hts "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiburan sehat:  "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hhs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hhs "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hiburan sangat sehat:  "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hhss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hhss"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 1: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr1"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 2: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr2"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 3: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr3"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 4: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr4"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 5: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr5"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 6: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr6"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 7: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr7"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 8: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr8"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 9: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr9"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 10: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr10"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 11: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr11"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 12: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr12"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules13: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr13"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 14: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr14"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 15: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr15"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 16: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr16"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 17: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr17"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 18: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr18"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 19: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr19"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 20: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+
+            <TextView
+                android:id="@+id/hr20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr20"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rules21"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr21"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 22: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr22: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 23: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr23 "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 24: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr24"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 25: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr25"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 26: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr26"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/rules27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules 27: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hr27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hr27: "
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/fuz1"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:text="Perhitungan Rules"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/defuz1"
+                android:layout_width="195dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="99dp"
+                android:text="defuzzifikasi"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+            <TextView
+                android:id="@+id/hdefuz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hdefuz"
+                android:layout_marginBottom="99dp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="480dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

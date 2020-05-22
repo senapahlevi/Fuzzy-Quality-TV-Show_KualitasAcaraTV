@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">fuzzyAcaraTv</string>
+    <string name="textview">TextView</string>
+    <string name="subheading">Pertanyaan umum </string>
+    <string name="faq">
+        A: Bagaimana cara menggunakan aplikasi ini?\n
+        B: Caranya adalah harus memasukkan inputan 3 kemudian klik output.
+        \n\n
+        A:Data-data tersebut berasal darimana ?\n
+        B:Data yang ada di aplikasi ini berasal dari survey handout KPI tahun 2018.\n
+        \n
+        A:Aplikasi ini menggunakan jenis metode Fuzzy apa?\n
+        B:Fuzzy mamdani metode.\n
+        \n\n\n\n
+        CREATED BY ~SENA PAHLEVI R~
+    </string>
+</resources>
